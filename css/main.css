@@ -1,69 +1,71 @@
 /**fonts */
 @font-face {
-    font-family: jost;
-    src: url(../fonts/Jost/Jost-VariableFont_wght.ttf);
-  }
-  
-  
-  /* root */
-  
-  :root {
-      --orange: #001E3C;
-      --black: #222;
-      --white: #fff;
-      --light-black: #666;
-      --light-white: #ccc;
-      --light-bg: rgba(0, 0, 0, 0.7);
-      --dark-bg: #00000099;
-      --border: 0.1rem solid #aaa;
-      --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    }
-  /** default settings */
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
-    text-transform: capitalize;
-  }
-  
-  /* header style */
-  
-  .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
-  .header .logo {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: var(--black);
-  }
-  
-  .header .logo  {
-    color: var(--peru);
-    padding-right: 0.5rem;
-    width: 2.5rem;
-  }
-  .header .nav a {
-    font-size: 16px;
-    margin-left: 2rem;
-    color: var(--light-black);
-  }
-  
-  .header .nav  a:hover {
-    color: var(--orange);
-  }
-  
+  font-family: jost;
+  src: url(../fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+
+/* root */
+
+:root {
+  --orange: #cda274;
+  --black: #222;
+  --white: #fff;
+  --light-black: #666;
+  --light-white: #ccc;
+  --light-bg: rgba(0, 0, 0, 0.7);
+  --dark-bg: #00000099;
+  --border: 0.1rem solid #aaa;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+/** default settings */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+  text-transform: capitalize;
+}
+
+/* header style */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.header .logo {
+  color: var(--peru);
+  padding-right: 0.5rem;
+  width: 340px;
+  background-color: aqua;
+  position: absolute;
+  left: 0;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .nav a {
+  font-size: 16px;
+  margin-left: 2rem;
+  color: var(--light-black);
+  font-family: jost;
+}
+
+.header .nav a:hover {
+  color: var(--orange);
+}
