@@ -677,3 +677,57 @@
 
   color: var(--light-black);
 }
+
+/* wanna section style */
+.wanna {
+  background: #292f36;
+  border-radius: 70px;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.wanna-theme {
+  font-family: "Serif-Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 75px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.22px;
+
+  color: var(--white);
+}
+
+.wanna-content {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.22px;
+  margin: 1rem;
+  color: var(--white);
+}
+
+.wanna-btn {
+  background: var(--orange);
+  border: 2px solid #cda274;
+  box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  margin: 1rem;
+  color: var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
