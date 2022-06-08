@@ -15,8 +15,8 @@
   --button: #292f36;
   --black: #222;
   --white: #fff;
+  --light-white: #f4f0ec;
   --light-black: #666;
-  --light-white: #ccc;
   --light-bg: rgba(0, 0, 0, 0.7);
   --dark-bg: #00000099;
   --border: 0.1rem solid #aaa;
@@ -77,19 +77,19 @@
 }
 
 /* img section style */
-.img-section {
-}
 
 .img-section .heading-img img {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
+  height: 120vh;
+  object-fit: cover;
 }
 /* heading area */
 
 .heading-area {
-  margin-top: 7rem;
+  margin-top: 12rem;
 }
 
 /* heading text */
@@ -119,7 +119,7 @@
   background: var(--button);
   border: 2px solid var(--button);
   border-radius: 18px;
-    position: relative;
+  position: relative;
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -132,9 +132,174 @@
   padding: 1rem;
   margin-top: 2rem;
   color: var(--white);
+  cursor: pointer;
+}
+.down-btn p {
+  z-index: 2;
+}
+.heading-right-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  height: 40px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  z-index: 1;
 }
 
+.heading-right-icon::-webkit-scrollbar {
+  width: 0rem;
+}
+.down-btn:hover .heading-right-icon {
+  position: absolute;
+  right: -5px;
+}
 
+/* flex info section style */
 
+.row-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem auto;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.col-theme {
+  font-family: "Serif-Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 39px;
+  /* identical to box height, or 156% */
+
+  text-align: center;
+  letter-spacing: 0.22px;
+
+  color: var(--button);
+}
+.col-text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  /* or 150% */
+  padding: 5px 1rem;
+  text-align: center;
+  letter-spacing: 0.22px;
+
+  color: var(--light-black);
+}
+.col-link {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.22px;
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: var(--light-black);
+  align-items: center;
+  position: relative;
+}
+.col-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.col-link:hover .fa-arrow-right {
+  right: 0px;
+}
+
+.fa-arrow-right {
+  position: absolute;
+  color: var(--orange);
+  top: 4px;
+  right: 5px;
+}
+
+/* tackle section style */
+
+.row-tackle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.col-tackle {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.tackle-heading {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 65px;
+  /* or 130% */
+
+  letter-spacing: 0.22px;
+
+  color: var(--black);
+}
+
+.tackle-theme {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  padding: 15px 6rem 0 0;
+  letter-spacing: 0.22px;
+  margin: 1rem auto;
+  color: var(--light-black);
+}
+
+/* tackle contact */
+.tackle-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.tackle-phone-icon {
+  background: var(--light-white);
+  color: var(--orange);
+  border-radius: 50%;
+  height: auto;
+}
+.fa-phone {
+  padding: 1rem;
+  font-size: 30px;
+}
+.tackle-phone-icon:hover .fa-phone {
+  transform: rotate(-50deg);
+  cursor: pointer;
+}
+.tackle-phone-icon::-webkit-scrollbar {
+  width: 0rem;
+}
+.tackle-info {
+    display: flex;
+    flex-direction: column;
+}
+.tackle-number  , .tackle-call-theme {
+    font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 36px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.22px;
+
+color: var(--light-black);
+}
