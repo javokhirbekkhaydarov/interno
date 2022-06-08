@@ -4,10 +4,15 @@
   src: url(../fonts/Jost/Jost-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: serif-display;
+  src: url(../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
 /* root */
 
 :root {
   --orange: #cda274;
+  --button: #292f36;
   --black: #222;
   --white: #fff;
   --light-black: #666;
@@ -26,6 +31,7 @@
   box-sizing: border-box;
   transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
   text-transform: capitalize;
+  overflow-x: hidden;
 }
 
 /* header style */
@@ -69,3 +75,66 @@
 .header .nav a:hover {
   color: var(--orange);
 }
+
+/* img section style */
+.img-section {
+}
+
+.img-section .heading-img img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+/* heading area */
+
+.heading-area {
+  margin-top: 7rem;
+}
+
+/* heading text */
+
+.heading-text {
+  font-family: "Serif-Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: 0.22px;
+  color: var(--black);
+  width: 60%;
+}
+.central-text {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  width: 60%;
+  letter-spacing: 0.22px;
+  color: var(--black);
+}
+
+/* down btn */
+.down-btn {
+  background: var(--button);
+  border: 2px solid var(--button);
+  border-radius: 18px;
+    position: relative;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.72px;
+  width: 207px;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
