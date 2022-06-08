@@ -313,19 +313,19 @@
   margin: 5rem auto;
 }
 .about-theme {
-    font-family: 'DM Serif Display';
-font-style: normal;
-font-weight: bold;
-font-size: 45px;
-line-height: 58px;
-/* identical to box height, or 130% */
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 58px;
+  /* identical to box height, or 130% */
 
-text-align: center;
-letter-spacing: 0.22px;
-text-align: center;
-color: var(--black);
-margin: 3rem auto;
-width: 40%;
+  text-align: center;
+  letter-spacing: 0.22px;
+  text-align: center;
+  color: var(--black);
+  margin: 3rem auto;
+  width: 40%;
 }
 .about-row {
   display: flex;
@@ -383,90 +383,126 @@ width: 40%;
 }
 
 .user-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  text-align: center;
+  padding: 2rem 1rem;
+  letter-spacing: 0.22px;
 
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-/* or 150% */
-text-align: center;
-padding: 2rem 1rem ;
-letter-spacing: 0.22px;
-
-color: #4D5053;
+  color: #4d5053;
 }
-
 
 /* sponsors */
 
 .sponsors {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 .sponsors-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .sponsors-col {
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
 /* recently projects style */
 
 .recently-projects {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 .recently-projects p {
-    font-family: 'DM Serif Display';
-font-style: bold;
-font-weight: 400;
-font-size: 47px;
-line-height: 62px;
-/* identical to box height, or 133% */
+  font-family: "DM Serif Display";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 62px;
+  /* identical to box height, or 133% */
 
-text-align: center;
-letter-spacing: 0.22px;
+  text-align: center;
+  letter-spacing: 0.22px;
 
-color: var(--black);
+  color: var(--black);
 }
 .recently-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height, or 150% */
 
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 33px;
-/* identical to box height, or 150% */
-
-text-align: center;
-letter-spacing: 0.22px;
-color:var(--light-black);
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: var(--light-black);
 }
 
 .recently-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .recently-row .recently-col {
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 1rem;
- }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
 .recently-row .recently-col .room {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .recently-row .recently-col .room-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
- 
- .recently-row .recently-col img{
-    width:100%;
-  
- }
 
- 
+.recently-row .recently-col img {
+  width: 100%;
+}
+.room .room-info .room-info-theme {
+  font-family: "Serif-Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  /* identical to box height, or 156% */
+
+  letter-spacing: 0.22px;
+
+  color: var(--black);
+}
+
+.room .room-info .room-info-type {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.22px;
+
+  color: var(--light-black);
+}
+
+.room-icon .fa-angle-right {
+  display: flex;
+  color: var(--orange);
+  background: var(--light-white);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+}
+.room-icon:hover .fa-angle-right {
+    transform: rotate(360deg);
+    transform: rotate3d(360deg);
+}
+
