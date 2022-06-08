@@ -288,18 +288,111 @@
   width: 0rem;
 }
 .tackle-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.tackle-number  , .tackle-call-theme {
-    font-family: 'Jost';
+.tackle-number,
+.tackle-call-theme {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.22px;
+
+  color: var(--light-black);
+}
+
+/* ======== ==== == = = = == = about style */
+
+.about {
+  background-color: var(--light-white);
+  border-radius: 70px;
+  margin: 5rem auto;
+}
+.about-theme {
+    font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 58px;
+/* identical to box height, or 130% */
+
+text-align: center;
+letter-spacing: 0.22px;
+text-align: center;
+color: var(--black);
+margin: 3rem auto;
+width: 40%;
+}
+.about-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-col {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: var(--white);
+  padding: 40px;
+  margin: 2rem auto 6rem;
+  border-radius: 17px;
+}
+
+.user-theme {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-theme img {
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-info .username {
+  font-family: "DM Serif-Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.22px;
+
+  color: var(--black);
+}
+
+.user-info .user-location {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.22px;
+
+  color: var(--light-black);
+}
+
+.user-heading {
+
+font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
-line-height: 36px;
-/* identical to box height, or 150% */
-
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+text-align: center;
+padding: 2rem 1rem ;
 letter-spacing: 0.22px;
 
-color: var(--light-black);
+color: #4D5053;
 }
