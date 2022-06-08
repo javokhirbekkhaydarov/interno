@@ -396,3 +396,77 @@ letter-spacing: 0.22px;
 
 color: #4D5053;
 }
+
+
+/* sponsors */
+
+.sponsors {
+    margin: 2rem auto;
+}
+.sponsors-row {
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors-col {
+    cursor: pointer;
+
+}
+
+/* recently projects style */
+
+.recently-projects {
+    margin: 2rem auto;
+}
+.recently-projects p {
+    font-family: 'DM Serif Display';
+font-style: bold;
+font-weight: 400;
+font-size: 47px;
+line-height: 62px;
+/* identical to box height, or 133% */
+
+text-align: center;
+letter-spacing: 0.22px;
+
+color: var(--black);
+}
+.recently-heading {
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: 0.22px;
+color:var(--light-black);
+}
+
+.recently-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recently-row .recently-col {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+ }
+.recently-row .recently-col .room {
+    display: flex;
+    justify-content: space-between;
+}
+.recently-row .recently-col .room-info {
+    display: flex;
+    flex-direction: column;
+}
+ 
+ .recently-row .recently-col img{
+    width:100%;
+  
+ }
+
+ 
