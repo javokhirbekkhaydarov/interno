@@ -1017,3 +1017,155 @@
       font-size: 14px;
   }
 }
+
+
+@media (min-width: 787px) and (max-width: 1080px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-links {
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      top: 6vh;
+      z-index: 10;
+      background-color: var(--light-white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      text-decoration: none;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+    }
+    .nav-active {
+      transform: translate(0);
+    }
+    .nav-links li {
+      opacity: 0;
+      list-style: none;
+    }
+    .nav-links li a {
+      color: var(--black);
+    }
+    .burger {
+      display: block;
+      margin: 1rem;
+    }
+    .burger div {
+      background: var(--orange);
+    }
+    .heading-text {
+      font-size: 40px;
+      width: 60%;
+    }
+    .img-section .heading {
+      height: 30vh;
+    }
+  
+    .row-info {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 12rem  auto;
+   
+    }
+  
+    .row-tackle {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+    }
+    .col-tackle {
+      width: 90%;
+      margin: 2rem auto;
+    }
+    .tackle-heading {
+      font-size: 30px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .tackle-theme {
+      font-size: 18px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .about {
+      width: 90%;
+    }
+    .about-theme {
+      font-size: 30px;
+      width: 80%;
+    }
+    .about-row {
+      display: flex;
+      flex-direction: column;
+    }
+    .about-col {
+      width: 90%;
+    }
+    .sponsors {
+      display: none;
+    }
+    .recently-projects p {
+      font-size: 30px;
+    }
+    .recently-heading {
+      width: 90%;
+      font-size: 18px;
+    }
+    .recently-row {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .numeric-row {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    .numeric-col:not(:last-child) {
+      border-bottom: 1px solid var(--orange);
+  
+      border-right: 0px solid var(--orange);
+    }
+  
+    .recently-blogs-row{
+      display: flex;
+      flex-direction: column;
+      width: 90%; 
+    }
+    .wanna{
+        width: 90%;
+  
+    }
+    .wanna-theme {
+        font-size: 30px;
+        width: 60%;
+        margin: 2rem auto;
+    }
+    .wanna-content {
+        font-size: 16px;
+    }
+    .footer {
+      text-align: center;
+      width: 90%;
+  
+    }
+    .footer-row {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+    }
+    .footer-col {
+        width: 80%;
+    }
+    .down-section {
+        width: 70%;
+        font-size: 14px;
+    }
+  }
