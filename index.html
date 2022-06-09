@@ -10,7 +10,11 @@
     <!-- currently container css -->
     <link rel="stylesheet" href="./css/container.css" />
 
-
+    <!-- swepper js  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -258,12 +262,15 @@
       </div>
     </section>
 
-    <!-- sponsors -->
+    <!-- blogs section starts -->
 
-    <section class="sponsors container" id="servicies" >
-      <div class="sponsors-row">
-        <div class="sponsors-col">
-          <svg
+    <section class="sponsors container" id="sponsors">
+     
+
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper sponsors-row" >
+          <div class="swiper-slide slide sponsors-col">
+            <svg
             width="132"
             height="43"
             viewBox="0 0 132 43"
@@ -319,10 +326,10 @@
               fill="#292F36"
             />
           </svg>
-        </div>
+          </div>
 
-        <div class="sponsors-col">
-          <svg
+          <div class="swiper-slide slide sponsors-col">
+            <svg
             width="103"
             height="103"
             viewBox="0 0 103 103"
@@ -434,9 +441,10 @@
               fill="#292F36"
             />
           </svg>
-        </div>
-        <div class="sponsors-col">
-          <svg
+          </div>
+
+          <div class="swiper-slide slide sponsors-col">
+            <svg
             width="164"
             height="43"
             viewBox="0 0 164 43"
@@ -468,9 +476,10 @@
               fill="#292F36"
             />
           </svg>
-        </div>
-        <div class="sponsors-col">
-          <svg
+          </div>
+
+          <div class="swiper-slide slide sponsors-col">
+            <svg
             width="145"
             height="45"
             viewBox="0 0 145 45"
@@ -526,9 +535,10 @@
               fill="#292F36"
             />
           </svg>
-        </div>
-        <div class="sponsors-col">
-          <svg
+          </div>
+
+          <div class="swiper-slide slide sponsors-col">
+            <svg
             width="117"
             height="48"
             viewBox="0 0 117 48"
@@ -612,9 +622,20 @@
               fill="#292F36"
             />
           </svg>
+          </div>
+
+          
         </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <!-- blogs section ends -->
+
+    <!-- sponsors -->
+
+ 
 
     <!-- recently projects -->
     <section class="recently-projects container" id="pages">
@@ -888,7 +909,8 @@
         </p>
       </div>
     </footer>
-
+    <!-- swepperjs -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
-    </body>
+  </body>
 </html>

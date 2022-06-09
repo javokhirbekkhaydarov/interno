@@ -456,9 +456,15 @@
 .sponsors-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 }
 .sponsors-col {
   cursor: pointer;
+  align-items: center;
+}
+.swiper-pagination {
+margin-top: 6rem ;
 }
 
 /* recently projects style */
@@ -954,9 +960,7 @@
   .about-col {
     width: 90%;
   }
-  .sponsors {
-    display: none;
-  }
+  
   .recently-projects p {
     font-size: 30px;
   }

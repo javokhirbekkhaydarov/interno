@@ -21,3 +21,33 @@ const navAnim = () => {
   });
 };
 navAnim();
+
+// slider
+
+var swiper = new Swiper(".blogs-slider", {
+    autoplay:true,
+  loop: true,
+  autoHeight:true,
+  centeredSlides: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+  
+    },
+    1080: {
+      slidesPerView:3,
+       
+    },
+  
+  },
+  });
+  
