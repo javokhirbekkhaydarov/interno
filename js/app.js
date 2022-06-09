@@ -6,7 +6,7 @@ const navAnim = () => {
 
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
-  console.log("ishla");
+    console.log("ishla");
     //  Animate items
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
@@ -25,9 +25,9 @@ navAnim();
 // slider
 
 var swiper = new Swiper(".blogs-slider", {
-    autoplay:true,
+  autoplay: true,
   loop: true,
-  autoHeight:true,
+  autoHeight: true,
   centeredSlides: true,
   spaceBetween: 20,
   grabCursor: true,
@@ -41,13 +41,9 @@ var swiper = new Swiper(".blogs-slider", {
     },
     768: {
       slidesPerView: 2,
-  
     },
     1080: {
-      slidesPerView:3,
-       
+      slidesPerView: 3,
     },
-  
   },
-  });
-  
+});
