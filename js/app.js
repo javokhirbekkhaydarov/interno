@@ -43,7 +43,7 @@ var swiper = new Swiper(".blogs-slider", {
       slidesPerView: 2,
     },
     1080: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 });
